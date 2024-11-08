@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare | Doctor Dashboard</title> 
+    <!-- Page Icon -->
+    <link rel="shortcut icon" href="image/heartbeat-solid.svg" type="image/x-icon">   
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- Custom Css File Link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bot.css">
+</head>
+<body>
+    <!-- Header Section Starts -->
+    <div class="header">
+        <a href="#" class="logo"><i class="fas fa-heartbeat"></i> medicare.</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#services">services</a>
+            <a href="#about">about</a>
+            <a href="#dashboard">dashboard</a>
+            <a href="#appointments">appointments</a>
+            <a href="#patients">patients</a>
+            <a href="#blogs">blogs</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Home Section starts -->
+    <section class="home" id="home">
+        <div class="image">
+            <img src="./image/home-img.svg" alt="home-img.svg">
+        </div>
+        <div class="content">
+            <h3>Welcome, Dr. Smith</h3>
+            <p>Manage your appointments, patients, and medical records easily with our intuitive doctor dashboard. Stay updated on the latest healthcare trends and insights.</p>
+            
+    </section>
+    <!-- Home Section End -->
+
+    <!-- Icons section starts  -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-user-md"></i>
+            <h3>140+</h3>
+            <p>Experienced doctors</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <h3>1040+</h3>
+            <p>Satisfied patients</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-hospital-user"></i>
+            <h3>500+</h3>
+            <p>Successful treatments</p>
+        </div>
+        <div class="icons">
+            <i class="fas fa-stethoscope"></i>
+            <h3>80+</h3>
+            <p>Partner hospitals</p>
+        </div>
+    </section>
+    <!-- Icons section End  -->
+
+    <!-- Dashboard section Starts -->
+    <section class="dashboard" id="dashboard">
+        <h1 class="heading">Doctor <span>Dashboard</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Manage Appointments</h3>
+                <p>View and manage your daily schedule with ease. Accept or reschedule appointments based on your availability.</p>
+                <a href="#appointments" class="btn">Manage Appointments <span class="fas fa-chevron-right"></span> </a>
+            </div>
+            <div class="box">
+                <i class="fas fa-file-medical-alt"></i>
+                <h3>Medical Records</h3>
+                <p>Access your patients' medical records securely. Review and update reports in real-time for better diagnosis.</p>
+                <a href="viewRecord.html" class="btn">View Records <span class="fas fa-chevron-right"></span> </a>
+            </div>
+            <div class="box">
+                <i class="fas fa-users"></i>
+                <h3>Patient Management</h3>
+                <p>Keep track of your patients' health history and treatment plans. Monitor their progress over time.</p>
+                <a href="managePatient.html" class="btn">Manage Patients <span class="fas fa-chevron-right"></span> </a>
+            </div>
+            <div class="box">
+                <i class="fas fa-chart-line"></i>
+                <h3>Health Insights</h3>
+                <p>Get insights on recent healthcare trends and analytics to stay informed and enhance your practice.</p>
+                <a href="HealthInsights.html" class="btn">View Insights <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+    </section>
+    <!-- Dashboard section End -->
+    <!-- Service section Starts  -->
+    <section class="services" id="services">
+        <h1 class="heading">Our <span>Services</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-comments"></i>
+                <h3>Live Chat</h3>
+                <p>Our live chat service allows you to connect with healthcare professionals for real-time support and guidance.</p>
+                <a href="#" class="btn">Learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+            <div class="box">
+                <i class="fas fa-robot"></i>
+                <h3>Chatbot</h3>
+                <p>Our AI-powered chatbot is available 24/7 to answer your healthcare-related queries and provide assistance.</p>
+                <a href="#" class="btn">Learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+            <div class="box">
+                <i class="fas fa-file-medical-alt"></i>
+                <h3>Report Push</h3>
+                <p>Push the medical report directly to the patient concerned in a pdf format.</p>
+                <a href="#" class="btn">Learn more <span class="fas fa-chevron-right"></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- Service section End -->
+    <!-- Appointments section Starts -->
+    <section class="appointments" id="appointments">
+        <h1 class="heading">Manage <span>Appointments</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="./image/book-img.svg" alt="">
+            </div>
+            <form action="">
+                <h3>Upcoming Appointments</h3>
+                <input type="text" placeholder="Search by patient name" class="box" style="cursor: text; color: black;" onmouseover="this.style.cursor='black';">
+                <div class="appointment-list">
+                    <div class="appointment">
+                        <p><strong>Patient:</strong> Alice Johnson</p>
+                        <p><strong>Date:</strong> Oct 15, 2024</p>
+                        <p><strong>Time:</strong> 10:00 AM</p>
+                        <button class="btn">Reschedule</button>
+                        <button class="btn">Cancel</button>
+                    </div>
+                    <div class="appointment">
+                        <p><strong>Patient:</strong> Michael Brown</p>
+                        <p><strong>Date:</strong> Oct 15, 2024</p>
+                        <p><strong>Time:</strong> 2:00 PM</p>
+                        <button class="btn">Reschedule</button>
+                        <button class="btn">Cancel</button>
+                    </div>
+                    <!-- More appointments -->
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Appointments section End -->
+
+    <!-- Patient Management section Starts -->
+    <section class="patients" id="patients">
+        <h1 class="heading">Previous <span>Patients</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./image/pic-1.png" alt="">
+                <h3>James Anson  </h3>
+                <span>Recent Visit: 15th Oct, 2024</span>
+                <a href="#" class="btn">View Records</a>
+            </div>
+            <div class="box">
+                <img src="./image/pic-2.png" alt="">
+                <h3>Emily Davis</h3>
+                <span>Recent Visit: 12th Oct, 2024</span>
+                <a href="#" class="btn">View Records</a>
+            </div>
+            <div class="box">
+                <img src="./image/pic-3.png" alt="">
+                <h3>Leo Abbott</h3>
+                <span>Recent Visit: 10th Oct, 2024</span>
+                <a href="#" class="btn">View Records</a>
+            </div>
+            <!-- More patients -->
+        </div>
+    </section>
+    <!-- Patient Management section End -->
+
+    <!-- Blog section Starts -->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Doctor <span>Blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="./image/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 21st Sep, 2024</a>
+                        <a href="#"> <i class="fas fa-user"></i> By Dr. John Doe</a>
+                    </div>
+                    <h3>Latest Trends in Cardiology</h3>
+                    <p>Discover the latest advancements in cardiology that are transforming patient care and outcomes.</p>
+                    <a href="#" class="btn">Read more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./image/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 15th Sep, 2024</a>
+                        <a href="#"> <i class="fas fa-user"></i> By Dr. Jane Smith</a>
+                    </div>
+                    <h3>New Approaches to Diabetes Care</h3>
+                    <p>Explore innovative treatments and management strategies for diabetes to enhance patient well-being.</p>
+                    <a href="#" class="btn">Read more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+            <!-- More blogs -->
+        </div>
+    </section>
+    <!-- Blog section End -->
+
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Home </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Services </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> About </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Dashboard </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> Appointments </a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> contact@medicare.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA </a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> LinkedIn </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Custom Js File Link -->
+    <script src="./js/script.js"></script>
+    <div class="credit"> © 2024 Medcare. All Rights Reserved.</div>
+</body>
+<body>
+
+    <div class="chatbot-toggler" id="chatbotToggler">
+        <span>🤖</span> <!-- Bot icon -->
+    </div>
+
+    <div class="chatbot" id="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+        </header>
+        <div class="chatbox">
+            <!-- Chatbox content here -->
+            <ul class="chat">
+                <!-- Messages will go here -->
+            </ul>
+        </div>
+        <div class="chat-input">
+            <textarea placeholder="Type a message..."></textarea>
+            <span>&#10148;</span>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle chatbot visibility
+        const chatbotToggler = document.getElementById('chatbotToggler');
+        const chatbot = document.getElementById('chatbot');
+        const body = document.body;
+
+        chatbotToggler.addEventListener('click', () => {
+            body.classList.toggle('show-chatbot');
+        });
+    </script>
+
+   
+<!-- Chatbot Section End -->
+    <script src="./js/script.js"></script>
+   <!-- Footer section End -->
+</body>
+</html>
